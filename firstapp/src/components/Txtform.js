@@ -8,11 +8,13 @@ export default function Txtform(props) {
     // console.log("Click upper" + text)
     let newText = text.toUpperCase();
     setText(newText)
+    props.showalt("success","Converted to Uppercase")
   }
   const handlelowclick = () => {
     // console.log("Click upper" + text)
     let newText = text.toLowerCase();
     setText(newText)
+    props.showalt("success","Converted to Lowercase")
   }
   const handleonchange = (event) => {
     // console.log("click onchange")
@@ -20,6 +22,7 @@ export default function Txtform(props) {
   }
   const hadleclear = () => {
     setText("")
+    props.showalt("danger","Clear")
   }
   const handlespeakclick = () => {
     var changeclass = document.getElementById("Speakbtn");
@@ -30,20 +33,26 @@ export default function Txtform(props) {
       let msg = new SpeechSynthesisUtterance();
       msg.text = text
       window.speechSynthesis.speak(msg)
+      props.showalt("warning","Speaking")
+
     }
     else {
       setspeakNot('Speak')
       window.speechSynthesis.cancel()
       changeclass.classList.remove("btn-warning")
       changeclass.classList.toggle("btn-success")
+      props.showalt("danger","Stoped")
+
     }
   }
   const handlecopy = () => {
     navigator.clipboard.writeText(text);
+    props.showalt("light","Text Copied")
   }
   const hadleremoveextra = () => {
     let newText = text.split(/[ ]+/)
     setText(newText.join(" "))
+    props.showalt("success","Extra Spaces Removed")
   }
 
   return (
