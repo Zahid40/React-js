@@ -1,0 +1,15 @@
+.btn-width{
+    width: 100%;
+}
+.bg-light{
+    background-color: #9890d7;
+}
+.divalt{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.altbox{
+    width: 100%;
+}
