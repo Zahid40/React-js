@@ -88,12 +88,12 @@ export default function Txtform(props) {
         </div>
         <div className="container">
           <h2 className='p-3 rounded' style={{backgroundColor : props.mode==='light'?'white':'#05141a', color :  props.mode==='light'?'#133337':'#63dcf6'}}>Your Text summary</h2>
-          <p>Words : <strong>{text.split(" ").length}</strong></p>
+          <p>Words : <strong>{ text.trim()===""?0:text.split(" ").length}</strong></p>
           <p>characters : <strong>{text.length}</strong></p>
-          <p>Sentence : <strong>{text.split(".").length}</strong></p>
-          <p>Paragraph : <strong>{text.split("\n\n").length}</strong></p>
+          <p>Sentence : <strong>{text.trim()===""?0:text.split(".").length}</strong></p>
+          <p>Paragraph : <strong>{text.trim()===""?0:text.split("\n\n").length}</strong></p>
 
-          <p><strong>{0.005 * text.split(" ").length}</strong> Minutes To Read</p>
+          <p><strong>{0.005 * (text.trim()===""?0:text.split(" ").length)}</strong> Minutes To Read</p>
           <p><strong>{text.length / text.split(" ").length}</strong> Charactors Per Word</p>
           <h2 className='p-3 rounded' style={{backgroundColor : props.mode==='light'?'white':'#05141a', color :  props.mode==='light'?'#133337':'#63dcf6'}}>Preview</h2>
           <p>{text}</p>
