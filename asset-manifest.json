@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/React-js/firstapp/static/css/main.6ff58b66.css",
-    "main.js": "/React-js/firstapp/static/js/main.e616ff52.js",
-    "static/js/787.0edbcda9.chunk.js": "/React-js/firstapp/static/js/787.0edbcda9.chunk.js",
-    "index.html": "/React-js/firstapp/index.html",
-    "main.6ff58b66.css.map": "/React-js/firstapp/static/css/main.6ff58b66.css.map",
-    "main.e616ff52.js.map": "/React-js/firstapp/static/js/main.e616ff52.js.map",
-    "787.0edbcda9.chunk.js.map": "/React-js/firstapp/static/js/787.0edbcda9.chunk.js.map"
+    "main.css": "/projects/CurrentWave/static/css/main.f2bed53d.css",
+    "main.js": "/projects/CurrentWave/static/js/main.cbd074be.js",
+    "static/js/787.6643f1c0.chunk.js": "/projects/CurrentWave/static/js/787.6643f1c0.chunk.js",
+    "static/media/newsloading.svg": "/projects/CurrentWave/static/media/newsloading.65849095147d81fec1333c59bbb5134c.svg",
+    "index.html": "/projects/CurrentWave/index.html",
+    "static/media/newsapplogo.svg": "/projects/CurrentWave/static/media/newsapplogo.bf19001f4d4ac42d8e5e62b793172a3f.svg",
+    "main.f2bed53d.css.map": "/projects/CurrentWave/static/css/main.f2bed53d.css.map",
+    "main.cbd074be.js.map": "/projects/CurrentWave/static/js/main.cbd074be.js.map",
+    "787.6643f1c0.chunk.js.map": "/projects/CurrentWave/static/js/787.6643f1c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ff58b66.css",
-    "static/js/main.e616ff52.js"
+    "static/css/main.f2bed53d.css",
+    "static/js/main.cbd074be.js"
   ]
 }
